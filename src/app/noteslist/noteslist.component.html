@@ -1,0 +1,13 @@
+<header> <strong>SAVED NOTES:</strong></header>
+<div *ngFor="let note of notes_arr">
+    <ul>
+        <li>
+            <a href="#" (click)="openPopup(note)">{{note.firstLine}}</a>
+            <div *ngIf="showPopup" class="popup">
+                <h2>{{popupNote.firstLine}}</h2>
+                <pre>{{popupNote.note}}</pre>
+                <button (click)="closePopup()">Close</button>
+            </div>
+        </li>
+    </ul>  
+</div> 

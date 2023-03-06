@@ -1,0 +1,19 @@
+header {
+    font-size: xx-large;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #bcffff;
+    padding: 20px;
+    /* border: 1px solid black; */
+    z-index: 1;
+  }
+
+  button {
+    color: white;
+    background-color: #00549a;
+  }

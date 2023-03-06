@@ -1,0 +1,20 @@
+<div class="noteform">
+    <form
+        [formGroup]="form"
+        (ngSubmit)="onSubmit()"
+    >
+        <fieldset>
+
+            <div>
+                <textarea name="" id="note" class="note" formControlName="note"></textarea>
+            </div>
+                
+            <div>
+                <button class="btn btn-outline-primary" [disabled]="!form.valid">SAVENOTE</button>
+            </div>
+            
+        </fieldset>
+    </form>
+</div>
+
+
